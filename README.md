@@ -10,7 +10,7 @@
 `$ yarn sass-wa`  
   
 圧縮コンパイル＆autoprefixer（ソースマップなし）  
-$ yarn sass-r  
+`$ yarn sass-r`  
   
 ## 参考  
 ### [sass/node-sass](https://github.com/sass/node-sass/)  
