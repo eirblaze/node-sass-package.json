@@ -12,12 +12,12 @@
 圧縮コンパイル＆autoprefixer（ソースマップなし）
 $ yarn sass-r
 
-## 参考
-### [sass/node-sass](https://github.com/sass/node-sass/)
-###[超絶・超速のNODE-SASSでSASSコンパイルのすすめ](https://its-office.jp/blog/sass/2018/05/12/node-sass.html)
+## 参考  
+### [sass/node-sass](https://github.com/sass/node-sass/)  
+### [超絶・超速のNODE-SASSでSASSコンパイルのすすめ](https://its-office.jp/blog/sass/2018/05/12/node-sass.html)
 > autoprefixerでブラウザの対象バージョン確認する方法は以下の通りです。
 > `$ npx autoprefixer --info`
-###[npm-scriptsで簡単・高速・シンプルに Sass / Scss コンパイル！](http://chinpui.net/?p=744)
+### [npm-scriptsで簡単・高速・シンプルに Sass / Scss コンパイル！](http://chinpui.net/?p=744)
 > NPMを初期化する
 > `$ npm init`
 ### [npm-scriptsの練習メモ sassのコンパイルと圧縮をやってみる](https://qiita.com/miminari/items/50d8695c59ebf71b2307)
@@ -54,8 +54,8 @@ $ yarn sass-r
 > `node-sass test.scss test.css --output-style expanded --indent-type tab`
 >  
 > その他いろんなオプションがあります（日本語訳しておきました）
-```
--w、--watch                ディレクトリまたはファイルを見る
+> ```
+> -w、--watch                ディレクトリまたはファイルを見る
 -r、--recursive            ディレクトリやファイルを再帰的に監視する
 -o、--output               出力ディレクトリ
 -x、--omit-source-map-url  出力からソースマップのURLコメントを省略する
