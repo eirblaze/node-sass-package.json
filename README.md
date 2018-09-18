@@ -7,7 +7,7 @@
 `$ yarn sass-w`   
   
 自動コンパイル＆自動autoprefixer（ソースマップあり）  
-`$ yarn sass-wa`  
+`$ yarn sass-n`  
   
 圧縮コンパイル＆autoprefixer（ソースマップなし）  
 `$ yarn sass-r`  
