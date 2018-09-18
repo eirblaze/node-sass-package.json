@@ -57,17 +57,17 @@
 >  
 > その他いろんなオプションがあります（日本語訳しておきました）  
 ```
--w、--watch                ディレクトリまたはファイルを見る
+-w、--watch                ディレクトリまたはファイルの更新を監視
 -r、--recursive            ディレクトリやファイルを再帰的に監視する
 -o、--output               出力ディレクトリ
 -x、--omit-source-map-url  出力からソースマップのURLコメントを省略する
 -i、--indented-syntax      stdinのデータをsassコードとして扱う(対scss)
 -q、--quiet                エラー以外のログ出力を抑止する
 -v、--version              バージョン情報を表示します。
---output-style            CSS出力スタイル（ネストされた| expanded | compact | compressed）
---indent-type             出力CSSのインデントタイプ（スペース|タブ）
+--output-style            CSS出力スタイル (nested | expanded | compact | compressed)  
+--indent-type             出力CSSのインデントタイプ (space | tab)
 --undent-width            インデント幅。スペースまたはタブの数（最大値：10）
---linefeed               ラインフィードスタイル（cr | crlf | lf | lfcr）
+--linefeed               ラインフィードスタイル (cr | crlf | lf | lfcr)
 --source-comments         出力にデバッグ情報を含める
 --source-map              ソースマップを出力する
 --source-map-contents     マップにインクルードした内容を埋め込む
