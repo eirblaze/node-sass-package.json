@@ -17,6 +17,8 @@
 ### [超絶・超速のNODE-SASSでSASSコンパイルのすすめ](https://its-office.jp/blog/sass/2018/05/12/node-sass.html)
 > autoprefixerでブラウザの対象バージョン確認する方法は以下の通りです。  
 > `$ npx autoprefixer --info`
+### [1分でできるnode-sassとautoprefixerを使用したSCSSコンパイル方法](https://iwb.jp/node-sass-autoprefixer-scss-compile/)  
+>  package.jsonのファイルのあるディレクトリに`cd`で移動して、`yarn install`でnode-sassなどをインストール  
 ### [npm-scriptsで簡単・高速・シンプルに Sass / Scss コンパイル！](http://chinpui.net/?p=744)
 > NPMを初期化する  
 > `$ npm init`
