@@ -28,6 +28,12 @@
   ],
   "author": "EirBlaze",
   "license": "MIT",
+  "bugs": "https://github.com/eirblaze/node-sass-package.json/issues",
+  "homepage": "https://github.com/eirblaze/node-sass-package.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eirblaze/node-sass-package.json"
+  },
   "dependencies": {
     "autoprefixer": "^7.2.6",
     "node-sass": "^4.7.2",
