@@ -1,61 +1,61 @@
 # node-sass-package.json
 
-コンパイル＆autoprefixer（ソースマップあり）
-`$ yarn sass`
-
-自動高速コンパイル（ソースマップあり）
-`$ yarn sass-w`
-
-自動コンパイル＆自動autoprefixer（ソースマップあり）
-`$ yarn sass-wa`
-
-圧縮コンパイル＆autoprefixer（ソースマップなし）
-$ yarn sass-r
-
+コンパイル＆autoprefixer（ソースマップあり）  
+`$ yarn sass`  
+  
+自動高速コンパイル（ソースマップあり）  
+`$ yarn sass-w`   
+  
+自動コンパイル＆自動autoprefixer（ソースマップあり）  
+`$ yarn sass-wa`  
+  
+圧縮コンパイル＆autoprefixer（ソースマップなし）  
+$ yarn sass-r  
+  
 ## 参考  
 ### [sass/node-sass](https://github.com/sass/node-sass/)  
 ### [超絶・超速のNODE-SASSでSASSコンパイルのすすめ](https://its-office.jp/blog/sass/2018/05/12/node-sass.html)
-> autoprefixerでブラウザの対象バージョン確認する方法は以下の通りです。
+> autoprefixerでブラウザの対象バージョン確認する方法は以下の通りです。  
 > `$ npx autoprefixer --info`
 ### [npm-scriptsで簡単・高速・シンプルに Sass / Scss コンパイル！](http://chinpui.net/?p=744)
-> NPMを初期化する
+> NPMを初期化する  
 > `$ npm init`
 ### [npm-scriptsの練習メモ sassのコンパイルと圧縮をやってみる](https://qiita.com/miminari/items/50d8695c59ebf71b2307)
-> `$ npm install --save node-sass`
-> `--save`と書くと、package.jsonにdependenciesとして以下のように追加される。こうしておくと後で便利。
-> package.jsonを次のプロジェクトのディレクトリにコピペ（node_modules以下は除く）して
-> `$ npm install`
-> すると、必要なパッケージがインストールされて使えます。
+> `$ npm install --save node-sass`  
+> `--save`と書くと、package.jsonにdependenciesとして以下のように追加される。こうしておくと後で便利。  
+> package.jsonを次のプロジェクトのディレクトリにコピペ（node_modules以下は除く）して  
+> `$ npm install`  
+> すると、必要なパッケージがインストールされて使えます。  
 ### [npmでミニマムに始めるSass](https://qiita.com/masamichiueta/items/0074f002d8f1663577a2)
-> おまけ
-> nodeを使えばローカルサーバーも簡単に立ち上げられます。
-> local-web-serverを使用します。
-> `$ npm install -D local-web-server`
-> `$ ws`
+> おまけ  
+> nodeを使えばローカルサーバーも簡単に立ち上げられます。  
+> local-web-serverを使用します。  
+> `$ npm install -D local-web-server`  
+> `$ ws`  
 ### [node-sassでSassファイルをコンパイルする](https://qiita.com/setouchi/items/2f7ae68764abe74934fb)
-> よく使うコマンド
-> ファイルを更新したら自動コンパイルする場合は-wか--watchを付ける
-> `node-sass test.scss test.css -w`
+> よく使うコマンド  
+> ファイルを更新したら自動コンパイルする場合は-wか--watchを付ける  
+> `node-sass test.scss test.css -w`  
 >  
-> --output-styleでコンパイル結果を調整できます。デフォルトはnestedになっていますが、出力結果のCSSを整形して出力するならexpandedを指定します。
-> `node-sass test.scss test.css --output-style expanded`
+> --output-styleでコンパイル結果を調整できます。デフォルトはnestedになっていますが、出力結果のCSSを整形して出力するならexpandedを指定します。  
+> `node-sass test.scss test.css --output-style expanded`  
 >  
-> 本番公開時に圧縮コンパイルする場合はcompressedを指定します。
-> node-sass test.scss test.css --output-style compressed
+> 本番公開時に圧縮コンパイルする場合はcompressedを指定します。  
+> node-sass test.scss test.css --output-style compressed  
 >  
-> 小技
-> catで流すこともできます
-> `cat test.scss | node-sass > out.css`
+> 小技  
+> catで流すこともできます  
+> `cat test.scss | node-sass > out.css`  
 >  
-> デフォルトはインデントのスペース数は2ですがこれは変更できます
-> `node-sass test.scss test.css --output-style expanded --indent-width 4`
+> デフォルトはインデントのスペース数は2ですがこれは変更できます  
+> `node-sass test.scss test.css --output-style expanded --indent-width 4`  
 >  
-> インデントをタブにしたい時はタブにできます
-> `node-sass test.scss test.css --output-style expanded --indent-type tab`
+> インデントをタブにしたい時はタブにできます  
+> `node-sass test.scss test.css --output-style expanded --indent-type tab`  
 >  
-> その他いろんなオプションがあります（日本語訳しておきました）
-> ```
-> -w、--watch                ディレクトリまたはファイルを見る
+> その他いろんなオプションがあります（日本語訳しておきました）  
+```
+-w、--watch                ディレクトリまたはファイルを見る
 -r、--recursive            ディレクトリやファイルを再帰的に監視する
 -o、--output               出力ディレクトリ
 -x、--omit-source-map-url  出力からソースマップのURLコメントを省略する
