@@ -11,7 +11,7 @@
 
     "build-css": "node-sass --include-path scss wordpress/wp-content/themes/test/_sass/style.scss wordpress/wp-content/themes/test/style.css --output-style expanded --source-map wordpress/wp-content/themes/test/_sass/style.css.map --indent-type tab --indent-width 1 --source-comments",
     "build-css-r": "node-sass --include-path scss wordpress/wp-content/themes/test/_sass/style.scss wordpress/wp-content/themes/test/style.css --output-style compressed",
-    "autoprefixer": "postcss --use autoprefixer -o wordpress/wp-content/themes/test/style.css wordpress/wp-content/themes/test/style.css",
+    "autoprefixer": "postcss --use autoprefixer --map -o wordpress/wp-content/themes/test/style.css wordpress/wp-content/themes/test/style.css",
     "autoprefixer-r": "postcss --use autoprefixer --no-map -o wordpress/wp-content/themes/test/style.css wordpress/wp-content/themes/test/style.css",
 
     "nodemon-sass": "nodemon -e scss -x \"yarn build-css \"",
@@ -28,6 +28,12 @@
   ],
   "author": "EirBlaze",
   "license": "MIT",
+  "bugs": "https://github.com/eirblaze/node-sass-package.json/issues",
+  "homepage": "https://github.com/eirblaze/node-sass-package.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eirblaze/node-sass-package.json"
+  },
   "dependencies": {
     "autoprefixer": "^7.2.6",
     "node-sass": "^4.7.2",
