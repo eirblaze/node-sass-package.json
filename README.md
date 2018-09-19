@@ -1,16 +1,16 @@
 # node-sass-package.json
 
 コンパイル＆autoprefixer（ソースマップあり）
-`$ yarn sass`
+```$ yarn sass```
 
 自動高速コンパイル（ソースマップあり）
-`$ yarn sass-w`
+```$ yarn sass-w```
 
 自動コンパイル＆自動autoprefixer（ソースマップあり）
-`$ yarn sass-n`
+```$ yarn sass-n```
 
 圧縮コンパイル＆autoprefixer（ソースマップなし）
-`$ yarn sass-r`
+```$ yarn sass-r```
 
 ## 参考
 ### [sass/node-sass](https://github.com/sass/node-sass/)
