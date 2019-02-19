@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "yarn build-css && yarn autoprefixer",
-    "sass-r": "yarn build-css-r && yarn autoprefixer-r",
-    "sass-w": "node-sass --include-path scss wordpress/wp-content/themes/test/_sass/style.scss wordpress/wp-content/themes/test/style.css --output-style expanded --source-map wordpress/wp-content/themes/test/_sass/style.css.map --indent-type tab --indent-width 1 --source-comments -w",
+    "sass-r": "yarn build-css-r && yarn autoprefixer-r && yarn commpress-css",
+    "sass-w": "yarn sass && node-sass --include-path scss wordpress/wp-content/themes/test/_sass/style.scss wordpress/wp-content/themes/test/style.css --output-style expanded --source-map wordpress/wp-content/themes/test/_sass/style.css.map --indent-type tab --indent-width 1 --source-comments -w",
     "sass-n": "yarn nodemon-sass & yarn nodemon-autoprefixer",
     "build-css": "node-sass --include-path scss wordpress/wp-content/themes/test/_sass/style.scss wordpress/wp-content/themes/test/style.css --output-style expanded --source-map wordpress/wp-content/themes/test/_sass/style.css.map --indent-type tab --indent-width 1 --source-comments",
     "build-css-r": "node-sass --include-path scss wordpress/wp-content/themes/test/_sass/style.scss wordpress/wp-content/themes/test/style.css --output-style compressed",
@@ -14,6 +14,7 @@
     "autoprefixer-r": "postcss --use autoprefixer --no-map -o wordpress/wp-content/themes/test/style.css wordpress/wp-content/themes/test/style.css",
     "nodemon-sass": "nodemon -e scss -x \"yarn build-css \"",
     "nodemon-autoprefixer": "nodemon -e scss -x \"yarn autoprefixer \"",
+    "commpress-css": "yarn cleancss -o wordpress/wp-content/themes/test/style.css wordpress/wp-content/themes/test/style.css",
     "test2": "yarn --version",
     "test": "node-sass --version"
   },
