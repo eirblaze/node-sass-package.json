@@ -31,14 +31,6 @@
     "type": "git",
     "url": "https://github.com/eirblaze/node-sass-package.json"
   },
-  "dependencies": {
-    "autoprefixer": "^7.2.6",
-    "node-sass": "^4.7.2",
-    "node-sass-import": "^1.1.1",
-    "nodemon": "^1.17.4",
-    "postcss": "^6.0.17",
-    "postcss-cli": "^5.0.0"
-  },
   "browserslist": [
     "last 2 versions",
     "not ie < 11",
@@ -46,6 +38,12 @@
     "iOS >= 9"
   ],
   "devDependencies": {
-    "clean-css-cli": "^4.2.1"
+    "autoprefixer": "^7.2.6",
+    "clean-css-cli": "^4.2.1",
+    "node-sass": "^4.7.2",
+    "node-sass-import": "^1.1.1",
+    "nodemon": "^1.17.4",
+    "postcss": "^6.0.17",
+    "postcss-cli": "^5.0.0"
   }
 }
